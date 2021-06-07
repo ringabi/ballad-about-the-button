@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Баллада о кнопке</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body class="h-100 d-flex justify-content-center align-items-center bg-dark">
+    <main class="d-flex align-items-center justify-content-center h-100">
+        <div id="containerBtn" class="container">
+           <a id="playBtn" href="#" class="tesuen">Кнопка</a>
+        </div>
+		<div id="controls" class="d-none">
+			<video width="500" height="300" src="./video/videoplayback.mp4" controls></video>
+		</div>
+    </main>
+	<script>
+		var videoEl = document.getElementsByTagName('video')[0],
+			containerBtn = document.getElementById('containerBtn'),
+			playBtn = document.getElementById('playBtn'),
+			vidControls = document.getElementById('controls');
+		playBtn.addEventListener('click', function () {
+			videoEl.play();
+			playBtn.classList.add('d-none');
+			containerBtn.classList.add('d-none');
+			vidControls.classList.remove('d-none');
+		}, false);
+	</script>
+</body>
+</html>

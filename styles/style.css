@@ -1,0 +1,140 @@
+html,
+body,
+img,
+div,
+section,
+header,
+article {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+.bg-dark {
+  background-color: #000;
+}
+
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 250px;
+  height: 250px;
+  background-color: beige;
+}
+
+button {
+  width: 120px;
+  height: 50px;
+  border: 3px solid gold;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 11px 1px 1px rgba(0, 0, 0, 0.67);
+          box-shadow: 10px 11px 1px 1px rgba(0, 0, 0, 0.67);
+  cursor: pointer;
+}
+
+.tesuen {
+  padding: 6px 20px;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 0 1px 1px #555;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tesuen {
+  background-color: #2ca0ca;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#2ca0ca), to(#3eb8e5));
+  background-image: linear-gradient(bottom, #2ca0ca 0%, #3eb8e5 100%);
+  background-image: -ms-linear-gradient(bottom, #2ca0ca 0%, #3eb8e5 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2ca0ca), color-stop(1, #3eb8e5));
+  -webkit-box-shadow: 0 6px 0 #156785;
+  -o-box-shadow: 0 6px 0 #156785;
+  box-shadow: 0 6px 0 #156785;
+}
+
+.tesuen::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -2px;
+  right: -2px;
+  top: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 4px;
+  z-index: -1;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 1px 0 #fff;
+  -o-box-shadow: 0 1px 0 #fff;
+  box-shadow: 0 1px 0 #fff;
+}
+
+.tesuen::before {
+  background-color: #072239;
+}
+
+.tesuen:active {
+  background-color: #2ca0ca;
+  -webkit-box-shadow: 0 1px 0 #a8f9f9 inset, 0 -1px 0 #156785 inset;
+  -o-box-shadow: 0 1px 0 #a8f9f9 inset, 0 -1px 0 #156785 inset;
+  box-shadow: 0 1px 0 #a8f9f9 inset, 0 -1px 0 #156785 inset;
+  top: 7px;
+}
+
+.tesuen:active::before {
+  top: -2px;
+}
+
+.tesuen:active, .tesuen:hover, .tesuen:focus {
+  color: #fff;
+  text-shadow: 0 1px 2px #333;
+}
+
+.brokenglass {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: no-repeat center/120% url("../images/brokenglass.jpg");
+}
+
+.h-100 {
+  height: 100vh;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.justify-content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
