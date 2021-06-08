@@ -60,3 +60,25 @@ button {
 .justify-content-center {
   justify-content: center;
 }
+
+.m-0-auto {
+  margin: 0 auto;
+}
+
+@media (min-width: 375px) {
+  video {
+    width: 335px;
+  }
+}
+
+@media (min-width: 425px) {
+  video {
+    width: 385px;
+  }
+}
+
+@media (min-width: 540px) {
+  video {
+    width: 500px;
+  }
+}
